@@ -1,4 +1,3 @@
-
 locals {
 
   argo_name = "argo"
@@ -36,7 +35,8 @@ resource "helm_release" "argo" {
 
 }
 
-resource "kubernetes_ingress" "argo_server_ingress" {
+//resource "kubernetes_ingress" "argo_server_ingress" {
+resource "kubernetes_ingress_v1" "argo_server_ingress" {
 
   wait_for_load_balancer = true
 
@@ -73,19 +73,25 @@ resource "kubernetes_ingress" "argo_server_ingress" {
     }
   }
 
+
   spec {
     rule {
       http {
         path {
           path = "/*"
           backend {
-            service_name = "argo-server"
-            service_port = 2746
+            service {
+              name = "argo-server"
+              port {
+                number = 2746
+              }
+            }
           }
         }
       }
     }
   }
+
 
   depends_on = [helm_release.argo]
 

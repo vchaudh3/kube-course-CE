@@ -17,7 +17,8 @@ module "vpc" {
 module "kube" {
   source          = "terraform-aws-modules/eks/aws"
   version         = "17.1.0"
-  cluster_version = "1.21"
+  #cluster_version = "1.21"
+  cluster_version = "1.25"
   cluster_name    = local.cluster_name
   subnets         = module.vpc.public_subnets
   vpc_id          = module.vpc.vpc_id
@@ -30,6 +31,10 @@ module "kube" {
       name                 = "system-ec2"
       subnets              = [local.primary_subnet_id, local.secondary_subnet_id]
       instance_type        = local.regular_instance_type
+
+      //asg_desired_capacity = 2
+      //asg_min_size = 2
+      //asg_max_size = 5
 
       asg_desired_capacity = 1
       asg_min_size = 1

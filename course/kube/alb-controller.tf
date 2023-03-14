@@ -10,7 +10,8 @@ resource "helm_release" "aws_load_balancer_controller" {
   repository = "https://aws.github.io/eks-charts"
   // See: https://github.com/aws/eks-charts/tree/master/stable/aws-load-balancer-controller
   //      https://github.com/kubernetes-sigs/aws-load-balancer-controller
-  version    = "1.2.6"
+  //version    = "1.2.6"
+  version    = "1.4.2"
   namespace  = "kube-system"
   values = [templatefile(
   "${path.module}/helm/values/aws-alb-controller.yaml",
