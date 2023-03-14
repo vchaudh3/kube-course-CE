@@ -121,10 +121,7 @@
         "enabled" : {
           "type": "boolean"
         },
-        "serviceAccountName" : {
-          "type": "string"
-        },
-        "command" : {
+        "command" :{
           "type": "string"
         },
         "expectedCommandResult" : {

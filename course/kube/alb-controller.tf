@@ -10,19 +10,19 @@ resource "helm_release" "aws_load_balancer_controller" {
   repository = "https://aws.github.io/eks-charts"
   // See: https://github.com/aws/eks-charts/tree/master/stable/aws-load-balancer-controller
   //      https://github.com/kubernetes-sigs/aws-load-balancer-controller
-  version    = "1.2.6"
+  #version    = "1.2.6"
+  version    = "1.4.2"
   namespace  = "kube-system"
   values = [templatefile(
   "${path.module}/helm/values/aws-alb-controller.yaml",
     {
       cluster_name = local.cluster_name
       name_override = local.alb_controller_name
-      system_ec2_logical_role_name = local.system_ec2_logical_role_name
       alb_controller_role_arn = module.iam_assumable_aws_alb_controller_role.iam_role_arn
     }
   )]
 
-  depends_on = [module.kube, null_resource.coredns_patch]
+  depends_on = [module.kube]
 }
 
 module "iam_assumable_aws_alb_controller_role" {

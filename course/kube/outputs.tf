@@ -46,18 +46,6 @@ output "cluster_oidc_issuer_url" {
   value = module.kube.cluster_oidc_issuer_url
 }
 
-output "system_ec2_logical_role_name" {
-  value = local.system_ec2_logical_role_name
-}
-
 output "tools_logical_role_name" {
   value = local.tools_logical_role_name
-}
-
-output "workload_logical_role_name" {
-  value = local.workload_logical_role_name
-}
-
-output "helm_test_service_account_name" {
-  value = kubernetes_service_account.helm_test.metadata[0].name
 }

@@ -1,0 +1,1138 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.3.10.RELEASE)
+
+2023-01-29 09:53:31.286  INFO 1 --- [           main] c.m.basic.BasicMicroservice              : Starting BasicMicroservice v1.0.0-SNAPSHOT on basic-7495d7cdfc-kdb92 with PID 1 (/app.jar started by root in /)
+2023-01-29 09:53:31.362  INFO 1 --- [           main] c.m.basic.BasicMicroservice              : No active profile set, falling back to default profiles: default
+2023-01-29 09:53:36.790  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-29 09:53:36.863  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-29 09:53:36.864  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-01-29 09:53:37.164  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-29 09:53:37.164  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5387 ms
+2023-01-29 09:53:39.079  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-01-29 09:53:39.089 DEBUG 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-29 09:53:39.378 DEBUG 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-01-29 09:53:39.393 DEBUG 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-29 09:53:39.485 DEBUG 1 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-29 09:53:39.773  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-29 09:53:39.788  INFO 1 --- [           main] c.m.basic.BasicMicroservice              : Started BasicMicroservice in 10.7 seconds (JVM running for 12.691)
+2023-01-29 09:53:57.193  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-29 09:53:57.194  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-29 09:53:57.194 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-29 09:53:57.202 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-29 09:53:57.203  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-01-29 09:53:57.279 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:53:57.284 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:53:57.393 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:53:57.394 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:53:57.477 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:07.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:07.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:07.097 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:07.103 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:07.105 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:07.097 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:07.110 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:07.111 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:07.112 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:07.117 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:17.088 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:17.089 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:17.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:17.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:17.094 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:17.096 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:17.096 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:17.097 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:17.097 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:17.097 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:24.618 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello?myName=MichaelK", parameters={masked}
+2023-01-29 09:54:24.619 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:24.620 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:24.620 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello MichaelK!"]
+2023-01-29 09:54:24.621 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:27.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:27.089 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:27.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:27.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:27.095 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:27.098 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:27.099 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:27.099 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:27.100 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:27.100 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:37.089 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:37.090 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:37.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:37.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:37.095 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:37.102 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:37.102 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:37.103 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:37.103 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:37.106 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:47.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:47.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:47.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:47.089 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:47.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:47.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:47.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:47.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:47.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:47.091 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:57.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:57.088 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:57.093 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:57.094 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:54:57.094 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:57.094 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:54:57.095 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:54:57.095 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:54:57.095 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:54:57.096 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:07.088 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:07.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:07.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:07.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:07.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:07.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:07.090 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:07.091 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:07.095 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:07.095 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:17.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:17.089 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:17.088 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:17.089 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:17.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:17.093 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:17.093 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:17.105 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:17.093 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:17.109 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:27.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:27.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:27.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:27.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:27.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:27.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:27.089 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:27.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:27.090 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:27.091 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:37.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:37.089 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:37.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:37.091 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:37.092 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:37.095 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:37.095 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:37.096 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:37.096 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:37.098 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:47.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:47.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:47.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:47.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:47.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:47.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:47.091 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:47.091 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:47.091 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:47.092 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:57.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:57.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:55:57.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:57.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:55:57.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:57.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:57.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:55:57.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:55:57.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:55:57.090 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:07.089 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:07.090 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:07.091 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:07.091 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:07.091 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:07.092 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:07.092 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:07.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:07.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:07.093 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:17.088 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:17.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:17.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:17.090 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:17.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:17.093 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:17.093 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:17.094 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:17.094 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:17.095 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:27.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:27.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:27.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:27.088 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:27.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:27.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:27.089 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:27.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:37.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:37.087 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:37.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:37.088 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:37.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:37.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:37.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:37.090 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:47.090 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:47.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:47.090 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:47.090 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:47.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:47.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:47.094 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:47.095 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:47.096 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:47.097 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:57.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:57.088 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:57.089 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:57.089 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:57.090 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:56:57.091 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:56:57.092 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:56:57.098 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:56:57.099 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:56:57.100 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:07.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:07.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:07.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:07.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:07.091 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:07.092 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:07.092 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:07.093 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:07.093 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:07.094 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:17.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:17.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:17.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:17.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:17.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:17.089 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:17.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:17.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:17.091 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:17.091 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:27.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:27.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:27.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:27.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:27.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:27.089 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:27.090 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:27.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:27.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:27.091 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:37.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:37.088 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:37.089 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:37.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:37.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:37.089 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:37.091 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:37.091 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:37.093 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:37.094 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:47.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:47.089 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:47.088 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:47.090 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:47.091 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:47.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:47.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:47.093 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:47.094 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:47.100 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:57.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:57.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:57.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:57.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:57.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:57:57.091 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:57:57.092 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:57:57.092 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:57:57.092 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:57:57.094 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:07.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:07.089 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:07.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:07.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:07.091 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:07.091 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:07.092 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:07.092 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:07.092 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:07.093 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:17.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:17.088 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:17.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:17.089 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:17.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:17.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:17.096 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:17.097 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:17.097 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:17.097 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:27.088 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:27.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:27.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:27.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:27.091 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:27.097 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:27.098 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:27.101 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:27.101 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:27.103 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:37.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:37.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:37.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:37.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:37.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:37.091 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:37.092 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:37.093 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:37.093 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:37.094 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:47.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:47.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:47.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:47.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:47.090 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:47.091 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:47.091 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:47.092 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:57.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:57.089 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:57.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:58:57.089 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:58:57.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:57.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:57.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:58:57.091 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:58:57.092 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:58:57.092 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:07.088 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:07.088 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:07.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:07.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:07.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:07.090 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:07.090 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:07.091 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:07.091 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:07.092 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:17.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:17.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:17.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:17.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:17.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:17.092 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:17.092 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:17.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:17.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:17.094 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:27.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:27.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:27.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:27.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:27.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:27.090 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:27.091 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:27.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:27.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:27.092 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:37.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:37.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:37.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:37.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:37.092 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:37.090 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:37.093 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:37.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:37.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:37.095 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:47.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:47.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:47.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:47.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:47.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:47.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:47.089 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:47.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:47.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:47.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:57.088 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:57.089 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:57.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:57.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:57.091 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 09:59:57.093 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 09:59:57.093 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 09:59:57.094 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 09:59:57.094 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 09:59:57.094 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:07.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:07.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:07.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:07.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:07.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:07.092 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:07.092 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:07.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:07.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:07.093 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:17.089 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:17.091 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:17.092 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:17.092 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:17.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:17.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:17.093 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:17.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:17.094 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:17.099 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:27.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:27.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:27.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:27.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:27.091 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:27.101 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:27.102 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:27.102 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:27.102 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:27.103 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:37.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:37.089 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:37.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:37.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:37.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:37.090 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:37.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:37.092 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:37.093 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:37.095 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:47.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:47.088 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:47.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:47.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:47.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:47.090 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:47.092 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:47.093 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:47.094 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:47.096 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:57.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:57.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:57.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:57.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:57.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:00:57.092 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:00:57.093 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:00:57.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:00:57.093 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:00:57.094 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:07.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:07.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:07.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:07.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:07.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:07.112 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:07.113 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:07.115 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:07.116 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:07.125 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:17.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:17.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:17.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:17.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:17.091 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:17.091 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:17.092 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:17.092 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:17.092 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:17.093 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:27.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:27.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:27.088 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:27.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:27.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:27.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:27.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:27.092 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:37.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:37.087 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:37.088 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:37.088 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:37.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:37.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:37.089 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:37.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:37.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:37.091 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:47.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:47.089 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:47.089 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:47.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:47.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:47.091 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:47.091 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:47.092 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:47.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:47.093 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:57.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:57.087 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:57.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:57.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:57.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:01:57.097 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:01:57.098 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:01:57.099 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:01:57.099 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:01:57.100 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:07.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:07.089 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:07.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:07.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:07.092 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:07.093 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:07.093 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:07.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:07.094 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:07.094 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:17.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:17.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:17.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:17.089 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:17.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:17.090 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:17.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:17.090 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:17.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:17.099 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:27.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:27.087 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:27.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:27.088 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:27.088 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:27.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:27.089 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:27.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:27.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:27.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:37.088 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:37.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:37.089 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:37.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:37.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:37.091 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:37.091 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:37.092 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:37.092 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:37.092 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:47.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:47.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:47.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:47.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:47.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:47.096 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:47.096 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:47.098 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:47.098 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:47.100 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:57.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:57.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:57.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:57.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:57.089 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:02:57.089 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:02:57.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:02:57.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:02:57.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:02:57.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:07.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:07.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:07.087 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:07.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:07.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:07.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:07.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:07.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:07.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:07.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:17.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:17.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:17.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:17.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:17.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:17.091 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:17.091 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:17.092 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:17.092 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:17.093 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:27.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:27.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:27.089 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:27.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:37.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:37.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:37.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:37.088 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:37.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:37.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:37.089 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:37.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:37.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:37.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:47.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:47.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:47.088 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:47.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:47.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:47.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:47.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:47.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:57.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:57.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:57.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:57.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:57.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:03:57.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:03:57.090 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:03:57.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:03:57.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:03:57.092 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:07.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:07.089 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:07.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:07.090 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:07.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:07.092 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:07.093 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:07.093 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:07.093 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:07.093 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:17.089 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:17.091 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:17.092 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:17.092 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:17.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:17.098 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:17.098 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:17.099 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:17.099 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:17.108 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:27.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:27.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:27.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:27.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:27.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:27.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:27.090 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:27.091 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:27.091 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:27.092 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:37.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:37.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:37.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:37.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:37.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:37.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:37.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:37.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:37.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:37.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:47.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:47.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:47.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:47.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:47.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:47.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:47.090 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:47.095 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:47.095 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:47.097 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:57.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:57.092 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:57.097 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:57.097 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:57.098 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:04:57.100 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:04:57.103 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:04:57.104 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:04:57.104 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:04:57.106 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:07.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:07.087 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:07.087 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:07.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:07.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:07.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:07.092 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:07.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:07.094 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:07.095 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:17.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:17.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:17.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:17.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:17.089 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:17.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:17.089 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:17.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:17.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:17.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:27.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:27.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:27.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:27.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:27.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:27.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:27.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:27.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:27.089 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:27.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:37.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:37.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:37.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:37.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:37.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:37.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:37.091 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:37.094 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:37.095 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:37.096 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:47.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:47.087 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:47.088 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:47.088 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:47.088 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:47.090 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:47.090 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:47.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:47.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:47.091 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:57.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:57.087 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:57.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:57.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:57.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:05:57.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:05:57.091 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:05:57.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:05:57.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:05:57.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:07.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:07.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:07.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:07.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:07.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:07.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:07.090 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:07.091 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:07.091 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:07.092 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:17.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:17.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:17.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:17.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:17.089 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:17.091 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:17.091 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:17.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:17.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:17.092 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:27.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:27.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:27.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:27.088 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:27.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:27.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:27.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:27.089 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:37.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:37.088 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:37.094 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:37.096 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:37.097 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:37.098 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:37.098 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:37.098 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:47.086 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:47.087 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:47.087 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:47.087 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:47.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:47.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:47.092 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:47.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:47.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:47.093 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:57.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:57.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:57.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:57.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:57.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:06:57.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:06:57.092 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:06:57.093 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:06:57.093 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:06:57.093 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:07.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:07.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:07.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:07.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:07.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:07.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:07.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:07.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:07.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:07.092 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:17.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:17.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:17.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:17.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:17.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:17.088 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:17.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:17.089 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:17.089 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:17.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:27.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:27.089 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:27.089 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:27.089 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:27.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:27.090 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:27.091 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:27.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:27.092 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:27.092 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:37.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:37.087 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:37.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:37.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:37.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:37.089 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:37.089 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:37.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:37.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:37.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:47.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:47.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:47.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:47.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:47.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:47.091 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:47.091 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:47.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:47.092 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:47.092 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:57.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:57.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:57.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:57.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:57.089 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:07:57.090 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:07:57.090 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:07:57.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:07:57.091 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:07:57.092 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:07.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:07.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:07.088 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:07.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:07.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:07.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:07.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:07.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:07.092 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:07.096 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:17.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:17.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:17.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:17.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:17.089 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:17.091 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:17.091 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:17.094 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:17.095 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:17.096 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:27.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:27.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:27.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:27.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:27.090 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:27.092 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:27.092 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:27.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:27.093 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:27.093 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:37.088 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:37.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:37.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:37.089 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:37.090 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:37.090 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:37.091 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:37.091 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:37.092 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:37.092 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:47.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:47.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:47.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:47.087 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:47.087 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:47.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:47.088 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:47.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:47.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:57.088 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:57.089 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:57.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:57.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:57.090 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:08:57.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:08:57.090 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:08:57.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:08:57.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:08:57.091 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:07.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:07.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:07.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:07.088 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:07.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:07.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:07.090 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:07.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:07.090 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:07.091 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:17.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:17.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:17.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:17.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:17.089 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:17.089 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:17.090 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:17.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:17.090 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:17.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:27.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:27.088 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:27.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:27.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:27.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:27.089 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:27.089 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:27.089 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:27.089 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:27.090 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:37.088 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:37.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:37.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:37.089 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:37.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:37.092 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:37.093 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:37.093 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:37.093 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:37.093 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:47.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:47.088 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:47.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:47.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:47.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:47.091 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:47.091 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:47.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:47.092 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:47.092 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:57.087 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:57.087 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:57.087 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:57.087 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:57.088 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:09:57.093 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:09:57.098 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:09:57.099 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:09:57.099 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:09:57.100 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:07.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:07.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:07.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:07.089 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:07.092 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:07.094 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:07.094 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:07.094 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:07.095 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:07.095 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:17.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:17.087 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:17.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:17.088 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:17.088 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:17.090 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:17.092 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:17.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:17.092 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:17.093 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:27.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:27.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:27.088 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:27.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:27.089 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:27.090 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:27.088 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:27.091 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:27.092 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:27.094 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:37.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:37.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:37.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:37.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:37.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:37.090 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:37.091 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:37.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:37.091 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:37.092 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:47.087 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:47.087 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:47.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:47.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:47.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:47.090 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:47.090 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:47.091 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:47.091 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:47.092 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:57.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:57.087 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:57.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:57.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:57.088 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:10:57.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:10:57.090 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:10:57.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:10:57.091 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:10:57.091 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:07.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:07.088 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:07.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:07.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:07.089 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:07.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:07.089 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:07.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:07.090 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:07.090 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:17.086 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:17.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:17.087 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:17.087 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:17.087 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:17.087 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:17.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:17.088 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:17.088 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:17.088 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:27.087 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:27.087 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:27.087 DEBUG 1 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:27.087 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:27.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:27.088 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:27.088 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:27.088 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:27.089 DEBUG 1 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:27.089 DEBUG 1 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:37.088 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:37.088 DEBUG 1 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:37.089 DEBUG 1 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:37.090 DEBUG 1 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:37.092 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:37.092 DEBUG 1 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:37.092 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:37.092 DEBUG 1 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:37.093 DEBUG 1 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:47.087 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:47.087 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:47.088 DEBUG 1 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:47.089 DEBUG 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:47.090 DEBUG 1 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:57.087 DEBUG 1 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:57.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:11:57.088 DEBUG 1 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:11:57.088 DEBUG 1 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:11:57.088 DEBUG 1 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:12:07.087 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:12:07.087 DEBUG 1 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:12:07.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:12:07.088 DEBUG 1 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:12:07.090 DEBUG 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:12:07.090 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:12:07.090 DEBUG 1 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:12:07.090 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:12:07.090 DEBUG 1 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:12:07.093 DEBUG 1 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:12:17.094 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:12:17.095 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:12:17.097 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:12:17.097 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:12:17.097 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-29 10:12:17.098 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hello", parameters={}
+2023-01-29 10:12:17.098 DEBUG 1 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.michaelkubecourse.basic.BasicMicroservice#sayHello(String)
+2023-01-29 10:12:17.099 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-01-29 10:12:17.099 DEBUG 1 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2023-01-29 10:12:17.110 DEBUG 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

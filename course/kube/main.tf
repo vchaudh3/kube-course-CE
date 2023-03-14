@@ -44,14 +44,7 @@ module "kube" {
       root_volume_type     = "gp2"
 
       kubelet_extra_args = local.workload_regular_ec2_kubelet_extra_args
-      tags = concat(
-        local.workload_instance_tags,
-        [{
-          key = local.system_ec2_logical_role_name
-          propagate_at_launch = "true"
-          value = "true"
-        }]
-      )
+      tags = local.common_instance_tags
     },
     {
       name                 = "tools"
@@ -63,82 +56,18 @@ module "kube" {
       asg_max_size = 1
 
       // Cost Savings
-      //      asg_desired_capacity = 0
-      //      asg_min_size = 0
-      //      asg_max_size = 0
+//      asg_desired_capacity = 0
+//      asg_min_size = 0
+//      asg_max_size = 0
 
       public_ip            = true
       root_volume_type     = "gp2"
 
       kubelet_extra_args = local.tools_regular_ec2_kubelet_extra_args
 
-      // Note: we do NOT mark it with the "cluster-autoscaler" tags deliberately,
-      //       so that the "tools" node(s) are "invisible" for the Cluster Autoscaler.
-      tags = [
-        {
-          key = "owner"
-          propagate_at_launch = "true"
-          value = "kube-course"
-        }
-      ]
-    },
-    {
-      name                 = "spot-primary"
-      subnets              = [local.primary_subnet_id]
-      override_instance_types = local.spot_instance_types
-
-      spot_instance_pools = 0
-      spot_allocation_strategy = "capacity-optimized"
-
-      // Cost Savings
-      //      asg_desired_capacity = 0
-      //      asg_min_size = 0
-      //      asg_max_size = 0
-
-      asg_desired_capacity = 1
-      asg_min_size = 1
-      asg_max_size = 5
-
-      public_ip            = true
-      root_volume_type     = "gp2"
-
-      kubelet_extra_args = local.workload_spot_ec2_kubelet_extra_args
-      tags = local.workload_instance_tags
-    },
-    {
-      name                 = "spot-secondary"
-      subnets              = [local.secondary_subnet_id]
-      override_instance_types = local.spot_instance_types
-
-      spot_instance_pools = 0
-      spot_allocation_strategy = "capacity-optimized"
-
-      // Cost Savings
-      //      asg_desired_capacity = 0
-      //      asg_min_size = 0
-      //      asg_max_size = 0
-
-      asg_desired_capacity = 1
-      asg_min_size = 1
-      asg_max_size = 5
-
-      public_ip            = true
-      root_volume_type     = "gp2"
-
-      kubelet_extra_args = local.workload_spot_ec2_kubelet_extra_args
-      tags = local.workload_instance_tags
+      tags = local.common_instance_tags
     }
   ]
-
-}
-
-resource "null_resource" "coredns_patch" {
-
-  provisioner "local-exec" {
-    command = "/course/kube/coredns-patch.sh"
-  }
-
-  depends_on = [module.kube]
 
 }
 

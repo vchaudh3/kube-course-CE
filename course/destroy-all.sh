@@ -5,11 +5,10 @@ set -e
 echo 'Destroying infrastructure:'
 echo '  /course/workloads'
 echo '  /course/reliability'
-echo '  /course/config'
 echo '  /course/kube'
 echo '  /course/misc/initial_terraform_aws_test'
 
-readonly expectedSteps=5
+readonly expectedSteps=4
 actualSteps=0
 
 readonly RED='\033[0;31m'
@@ -22,7 +21,7 @@ destroyInfra() {
   echo
   echo -e "${BLUE}*** PLANNED STEPS COUNT: ${expectedSteps} ********${NC}"
 
-  echo -e "${BLUE}*** Performing step 1/5... ********${NC}"
+  echo -e "${BLUE}*** Performing step 1/4... ********${NC}"
   echo
   cd workloads
   pwd
@@ -32,43 +31,34 @@ destroyInfra() {
   fi
   actualSteps=$((actualSteps + 1))
   echo
-  echo -e "${BLUE}*** Step 1/5 complete *************${NC}"
+  echo -e "${BLUE}*** Step 1/4 complete *************${NC}"
 
-  echo -e "${BLUE}*** Performing step 2/5... ********${NC}"
+  echo -e "${BLUE}*** Performing step 2/4... ********${NC}"
   echo
   cd ../reliability
   pwd
   terraform destroy -auto-approve
   actualSteps=$((actualSteps + 1))
   echo
-  echo -e "${BLUE}*** Step 2/5 complete *************${NC}"
+  echo -e "${BLUE}*** Step 2/4 complete *************${NC}"
 
-  echo -e "${BLUE}*** Performing step 3/5... ********${NC}"
-  echo
-  cd ../config
-  pwd
-  terraform destroy -auto-approve
-  actualSteps=$((actualSteps + 1))
-  echo
-  echo -e "${BLUE}*** Step 3/5 complete *************${NC}"
-
-  echo -e "${BLUE}*** Performing step 4/5... ********${NC}"
+  echo -e "${BLUE}*** Performing step 3/4... ********${NC}"
   echo
   cd ../kube
   pwd
   terraform destroy -auto-approve
   actualSteps=$((actualSteps + 1))
   echo
-  echo -e "${BLUE}*** Step 4/5 complete *************${NC}"
+  echo -e "${BLUE}*** Step 3/4 complete *************${NC}"
 
-  echo -e "${BLUE}*** Performing step 5/5... ********${NC}"
+  echo -e "${BLUE}*** Performing step 4/4... ********${NC}"
   echo
   cd ../misc/initial_terraform_aws_test
   pwd
   terraform destroy -auto-approve
   actualSteps=$((actualSteps + 1))
   echo
-  echo -e "${BLUE}*** Step 5/5 complete *************${NC}"
+  echo -e "${BLUE}*** Step 4/4 complete *************${NC}"
 }
 
 checkDestroyComplete() {
