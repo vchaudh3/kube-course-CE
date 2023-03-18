@@ -1,3 +1,4 @@
+
 locals {
 
   argo_name = "argo"
@@ -39,6 +40,7 @@ resource "helm_release" "argo" {
 resource "kubernetes_ingress_v1" "argo_server_ingress" {
 
   wait_for_load_balancer = true
+  //wait_for_load_balancer = false 
 
   metadata {
 
